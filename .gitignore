@@ -1,0 +1,9 @@
+
+*.asv
+~$tables.xlsx
+
+
+# Additional ignore commands for the public version:
+**/priv/*
+old/*
+!old/readme.txt

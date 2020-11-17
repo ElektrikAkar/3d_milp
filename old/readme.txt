@@ -1,0 +1,1 @@
+This folder keeps the old files temporarily. Then they will be deleted. 
