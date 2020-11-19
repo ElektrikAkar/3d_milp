@@ -9,16 +9,16 @@ in collaboration with Institute for Electrical Energy Storage Technology at the 
 
 V. Kumtepeli, HC. Hesse, M. Schimpe, A. Tripathi, Y. Wang, and A. Jossen,
 Energy Arbitrage Optimization With Battery Storage: 3D-MILP for Electro-Thermal Performance and Semi-Empirical Aging Models.
-IEEE Access, 2020. [Online]. Available:
+IEEE Access, vol. 8, pp. 204325-204341, 2020. [Online]. Available:
 https://doi.org/10.1109/ACCESS.2020.3035504
 
 ```
 @article{kumtepeli2020energy,
   title={Energy Arbitrage Optimization With Battery Storage: 3D-MILP for Electro-Thermal Performance and Semi-Empirical Aging Models},
   author={Kumtepeli, Volkan and Hesse, Holger C and Schimpe, Michael and Tripathi, Anshuman and Youyi, Wang and Jossen, Andreas},
-  journal={IEEE access},
-  volume={},
-  pages={1--17},
+  journal={IEEE Access},
+  volume={8},
+  pages={204325--204341},
   year={2020},
   publisher={IEEE}
   doi={10.1109/ACCESS.2020.3035504},
