@@ -44,31 +44,4 @@ https://doi.org/10.1109/ACCESS.2020.3035504
 
 ## How to use: 
 
-Run Optimization_single.m or Optimization_batch.m file. 
-
-## TODO: 
-
-- [ ] Write more documentation.
-- [ ] Cleaning the code.
-- [ ] Adding more unit tests.
-- [x] Creating plot functions .
-- [x] func_solve_quad_eq:
-  - [x] Add more generality. 
-  - [x] Check if it there is a problem with 2C case.
-- [x] Adding new price data.
-- [x] Adding batch simulation support. 
-  - [x] Changing default values by char-value pair. 
-  - [x] Changing default values by struct. 	
-  - [x] Calling optimization from "Optimization_batch.m".
-- [x] When saving files "combined" version causes 13x larger .mat files, use use Optimization_batch with func_get_batchTestSettings and look at results to replicate the issue.
-- [x] Add a back-up when saving files.
-- [ ] Add a try-catch block when saving files so that if it cannot write it waits for 10-20-30 seconds etc. If it cannot happen in 2 minutes save results with some other name. 
-
-Not very necessary for now:
-- [ ] Changing default settings by a .mat file. 
-
-## Results:
-
-## Experiments:
-
-## Useful Reference:
+Run Optimization_single.m or Optimization_batch.m file. Default settings are given in simulationSettings which can be called with additional settings.
