@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="doc/img/GraphicalAbstract.svg" />
+</p>
+
 # Energy Arbitrage Optimization With Battery Storage: 3D-MILP for Electro-Thermal Performance and Semi-Empirical Aging Models
 
 
