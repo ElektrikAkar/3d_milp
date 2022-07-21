@@ -7,7 +7,7 @@ function pathStruct = get_paths()
 pathStruct = struct();
 
 pathStruct.root = fileparts(mfilename('fullpath')); 
-% This file must be on the root folder!!!!
+% This file must be in the root folder!!!!
 
 pathStruct.data.main = fullfile(pathStruct.root, "data");
 pathStruct.data.CSV  = fullfile(pathStruct.data.main, "CSVs");
