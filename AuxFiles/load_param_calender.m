@@ -17,10 +17,10 @@ param.cal.E_a_cal       = 20592;    % J/mol
 
 
 param.AnodeLi_C.x_0     = 8.5e-3;   % Stoichiometry x(SOC =0%) for Anode Li-C
-param.AnodeLi_C.x_100   = 7.8e-1;   % Stoichiometry x(SOC =0%) for Anode Li-C
+param.AnodeLi_C.x_100   = 7.8e-1;   % Stoichiometry x(SOC =100%) for Anode Li-C
 
 param.Cathode_LFP.x_0   = 9.16e-1;  % Stoichiometry x(SOC =0%) for Cathode LFP
-param.Cathode_LFP.x_100 = 4.5e-2;   % Stoichiometry x(SOC =0%) for Cathode LFP
+param.Cathode_LFP.x_100 = 4.5e-2;   % Stoichiometry x(SOC =100%) for Cathode LFP
 
 %---------Anode---------
 func.Ua = @(x_a) 0.6379 + 0.5416*exp(-305.5309*x_a) + 0.044*tanh(-(x_a - 0.1958)/0.1088) + ...
@@ -40,7 +40,7 @@ func.x_c = @(SOC_pu) param.Cathode_LFP.x_0 + SOC_pu*(param.Cathode_LFP.x_100 - p
 
 func.Uc_SOC = @(SOC_pu) func.Uc(func.x_c(SOC_pu));
 
-func.Uca_SOC = @(SOC_pu) func.Uc(func.x_c(SOC_pu)) - func.Uc(func.x_a(SOC_pu)); %Verified Fig A1.(a).
+func.Uca_SOC = @(SOC_pu) func.Uc(func.x_c(SOC_pu)) - func.Ua(func.x_a(SOC_pu)); %Verified Fig A1.(a).
 
 func.k_cal = @(SOC_pu,Tk) param.cal.k_cal_ref*...
                       exp( -(param.cal.E_a_cal/param.cal.R_g).*(1./Tk - 1/param.cal.T_ref)).*...
